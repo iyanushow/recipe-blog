@@ -35,7 +35,7 @@ header p {
   width: 95%;
 }
 header p::before {
-  content: url('6dots.svg');
+  content: url('public/6dots.svg');
   margin-right: 0.5rem;
 }
 

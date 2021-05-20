@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://shady-recipe-blog.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -39,7 +39,7 @@
 
 ![screenshot](public/recipe.png)
 
-This is a responsive design for a page from a recipe blog . The solution can be found on [shady-recipe-blog](https://shady-interiors.netlify.app/).
+This is a responsive design for a page from a recipe blog . The solution can be found on [shady-recipe-blog](https://shady-recipe-blog.netlify.app/).
 
 ## Features
 
