@@ -1,0 +1,241 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+/* RESETS  */
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  max-width: 1024px;
+  margin: 2rem auto;
+  text-align: justify;
+}
+
+header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 1.0133rem + 3.698vw, 4.8rem);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: clamp(3.2rem, 1.351rem + 4.9307vw, 6.4rem);
+  margin: 1.5rem 0 1rem;
+}
+header p {
+  display: flex;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.1rem, 0.9267rem + 0.4622vw, 1.4rem);
+  line-height: clamp(1.5rem, 1.3844rem + 0.3082vw, 1.7rem);
+  color: #4f4f4f;
+  width: 95%;
+}
+header p::before {
+  content: url('6dots.svg');
+  margin-right: 0.5rem;
+}
+
+.img-container img {
+  border-radius: 1.2rem;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+.meta > div {
+  padding: 0.5rem 0;
+  display: flex;
+  min-width: 30%;
+}
+.meta .text {
+  padding-left: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.meta h6 {
+  color: #bdbdbd;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 0.6844rem + 0.3082vw, 1rem);
+  line-height: clamp(1rem, 0.8844rem + 0.3082vw, 1.2rem);
+}
+.meta p {
+  font-size: clamp(1rem, 0.7689rem + 0.6163vw, 1.4rem);
+  line-height: clamp(1.2rem, 0.9111rem + 0.7704vw, 1.7rem);
+}
+.meta .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yields {
+  flex-basis: 100%;
+}
+.yields .text p {
+  color: #f2994a;
+}
+section.ingredients {
+  margin: 1em 0;
+}
+.ingredients h3,
+.ingredients h4,
+.instructions h3 {
+  font-family: Playfair Display;
+  text-transform: capitalize;
+}
+.ingredients h3,
+.instructions h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(1.8rem, 1.4533rem + 0.9245vw, 2.4rem);
+  line-height: clamp(2.4rem, 1.9378rem + 1.2327vw, 3.2rem);
+}
+.ingredients h4 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: clamp(1.6rem, 1.4844rem + 0.3082vw, 1.8rem);
+  line-height: clamp(2.1rem, 1.9267rem + 0.4622vw, 2.4rem);
+  padding-top: 2.5rem;
+}
+
+.ingredients li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(1.4rem, 1.2844rem + 0.3082vw, 1.6rem);
+  line-height: 2.5rem;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+}
+label {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.3em;
+}
+label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid #828282;
+  border-radius: 0.4rem;
+}
+label span {
+  display: contents;
+  font-weight: 600;
+}
+input[type='checkbox']:checked + label::after {
+  content: '\2714';
+  position: absolute;
+  top: 0.525em;
+  left: 0.18em;
+  font-size: 1.375em;
+  line-height: 0;
+}
+.cheescake h4 {
+  padding-top: 4rem;
+}
+.toppings-span {
+  font-style: italic;
+  font-weight: normal;
+}
+.instructions h3 {
+  padding-top: 3rem;
+}
+.instructions-list {
+  padding: 0.5rem 0;
+  list-style: none;
+  counter-reset: new-counter;
+}
+.instructions-list li {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  counter-increment: new-counter;
+  position: relative;
+  padding-left: 3.6rem;
+  margin: 2rem 0;
+}
+.instructions-list li::before {
+  font-family: Playfair Display;
+  content: counter(new-counter);
+  color: #ffffff;
+  background: #f2994a;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 6px;
+  text-align: center;
+  align-self: start;
+  position: absolute;
+  width: 3.6rem;
+  height: 3.6rem;
+  left: -10px;
+}
+.instructions-list li span {
+  font-weight: bold;
+}
+.material-icons.menu {
+  color: #f2994a;
+}
+footer p {
+  text-align: center;
+  color: #828282;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+footer p span {
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 620px) {
+  body {
+    padding: 2em 4em;
+  }
+  header {
+    max-width: 75%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 10%;
+    margin: 2rem 0;
+  }
+  section.ingredients {
+    margin: 0;
+  }
+
+  .meta {
+    order: 1;
+    max-height: 37rem;
+    background: #ffffff;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 20px #0000001a;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .meta > div {
+    min-width: 8.5rem;
+  }
+  .yields {
+    flex-basis: auto;
+  }
+}
